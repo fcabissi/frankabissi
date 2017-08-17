@@ -1,5 +1,14 @@
 <!DOCTYPE html>
-
+<script>
+    var i=0;
+    function change() {
+      var head=document.getElementById("heado");
+      var color = ["green","blue","red","yellow"];
+      head.style.color=color[i];
+      i=(i+1)%color.length;
+    }
+    setInterval(change,500);
+</script>
 <html class="mdc-typography">
   <head>
     <meta charset="utf-8">
@@ -12,6 +21,7 @@
   </head>
   <body>
     <h1 id="heado" class="mdc-typography--display1" style="font-size:300px">Kill me</h1>
+
     </button>
   </body>
 </html>
