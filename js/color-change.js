@@ -6,4 +6,4 @@
       head.style.color=color[i];
       i=(i+1)%color.length;
     }
-    setInterval(change,500);
+    setInterval(change,1000);
